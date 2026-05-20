@@ -1,0 +1,15 @@
+name:  Task 1
+
+on:
+  push:
+jobs:
+  task-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: hostname
+        run: echo ${hostname}
+      - name: Print current user
+        run: echo ${whoami}
+      - name: install package
+        run: apt install tree
