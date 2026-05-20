@@ -12,4 +12,6 @@ jobs:
       - name: Print current user
         run: echo $(whoami)
       - name: install package
-        run: sudo apt install tree
+        run: |
+          sudo apt update
+          sudo apt install -y tree
