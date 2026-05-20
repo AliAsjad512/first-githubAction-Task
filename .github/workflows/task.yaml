@@ -8,9 +8,9 @@ jobs:
 
     steps:
       - name: hostname
-        run: echo $(hostname)
+        run: hostname
       - name: Print current user
-        run: echo $(whoami)
+        run: whoami
       - name: install package
         run: |
           sudo apt update
