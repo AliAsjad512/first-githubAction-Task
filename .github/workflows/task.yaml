@@ -8,8 +8,8 @@ jobs:
 
     steps:
       - name: hostname
-        run: echo ${hostname}
+        run: echo $(hostname)
       - name: Print current user
-        run: echo ${whoami}
+        run: echo $(whoami)
       - name: install package
-        run: apt install tree
+        run: sudo apt install tree
